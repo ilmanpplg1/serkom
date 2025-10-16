@@ -9,49 +9,16 @@
 </head>
 
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary rounded-4 shadow p-3 mb-5 bg-body rounded sticky-top">
-    <div class="container">
-      <a class="navbar-brand">
-        <img src="image/logo smkn 4.png" width="15%">
-        <b>SMKN 4 TASIKMALAYA</b>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <?php include 'layout/navbar.php'; ?>
+  <?php include 'layout/function.php'; ?>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-          <li class="nav-item">
-            <a class="nav-link" href="index.php">Beranda</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Profil
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="identitas.php">Identitas Sekolah</a></li>
-              <li><a class="dropdown-item" href="sejarah.php">Sejarah</a></li>
-              <li><a class="dropdown-item" href="kejuruan.php">Kejuruan</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="visi&misi.php">Visi & Misi</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="eskul.php">Ekstrakurikuler</a></li>
-          <li class="nav-item"><a class="nav-link" href="galeri.php">Galeri</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- TUTUP NAV -->
 
   <img src="image/gpt.png" alt="" width="100%">
 
   <div class="container">
     <!-- SECTION INFORMASI -->
-    <h1 class="my-4">Sambutan <p class="text-info">Kepala Sekolah</p></h1>
+    <h1 class="my-4">Sambutan <p class="text-info">Kepala Sekolah</p>
+    </h1>
     <div class="row">
       <div class="col-lg-3">
         <div class="card bg-primary">
@@ -82,32 +49,34 @@
         </div>
       </div>
     </div>
-    <!-- TUTUP SECTION INFORMASI -->
+  </div>
+  <!-- TUTUP SECTION INFORMASI -->
 
-    <!-- SECTION BERITA -->
+  <!-- SECTION BERITA -->
+  <div class="container">
     <div class="row">
       <div class="col-lg-12">
         <h1 class="text-center my-4">Berita</h1>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="card">
-              <img src="image/unik.jpg" alt="..." class="w-100 h-100">
-              <div class="card-body">
-                <h3>Cegah Geng Motor, SMKN di Tasikmalaya Luncurkan Ekstrakurikuler Unik</h3>
-                <h5 class="text-end">Rabu, 24 Juli 2024</h5>
-                <a class="btn btn-primary" target="_blank"
+        <div class="row g-4">
+          <div class="col-lg-6 d-flex">
+            <div class="card flex-fill">
+              <img src="image/unik.jpg" alt="..." class="card-img-top">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title">Cegah Geng Motor, SMKN di Tasikmalaya Luncurkan Ekstrakurikuler Unik</h3>
+                <h5 class="text-end mt-auto">Rabu, 24 Juli 2024</h5>
+                <a class="btn btn-primary mt-3" target="_blank"
                   href="https://bandung.kompas.com/read/2024/07/24/115239678/cegah-geng-motor-smkn-di-tasikmalaya-luncurkan-ekstrakurikuler-unik">Baca
                   selengkapnya</a>
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="card">
-              <img src="image/jobfair.jpg" alt="..." class="w-100 h-100">
-              <div class="card-body">
-                <h3>SMKN 4 Tasikmalaya Gelar Job Fair 2023</h3>
-                <h5 class="text-end">Kamis, 12 Oktober 2023</h5>
-                <a class="btn btn-primary" target="_blankkkk"
+          <div class="col-lg-6 d-flex">
+            <div class="card flex-fill">
+              <img src="image/jb.png" alt="..." class="card-img-top">
+              <div class=" card-body d-flex flex-column">
+                <h3 class="card-title">SMKN 4 Tasikmalaya Gelar Job Fair 2023</h3>
+                <h5 class="text-end mt-auto">Kamis, 12 Oktober 2023</h5>
+                <a class="btn btn-primary mt-3" target="_blank"
                   href="https://ruangatas.com/smkn-4-tasikmalaya-gelar-job-fair-2023-harapkan-angka-pengangguran-di-tasikmalaya-berkurang/">Baca
                   selengkapnya</a>
               </div>
@@ -116,68 +85,79 @@
         </div>
       </div>
     </div>
-    <!-- TUTUP SECTION BERITA -->
+  </div>
+  <!-- TUTUP SECTION BERITA -->
 
-    <!-- SECTION GALERI -->
-    <div class="row">
-      <div class="col-lg-12">
-        <h1 class="text-center my-4">Galeri</h1>
-        <div class="row">
-          <div class="col-lg-3"><img src="image/JOBFAIR.JPG" alt="..." class="card w-100 h-100"></div>
-          <div class="col-lg-3"><img src="image/JOBFAIR.JPG" alt="..." class="card w-100 h-100"></div>
-          <div class="col-lg-3"><img src="image/JOBFAIR.JPG" alt="..." class="card w-100 h-100"></div>
-          <div class="col-lg-3"><img src="image/JOBFAIR.JPG" alt="..." class="card w-100 h-100"></div>
-        </div>
-        <div class="text-center my-4">
-          <a class="btn btn-primary" href="galeri.php">Lihat Lainnya</a>
+
+  <!-- SECTION GALERI -->
+  <section style="background-color: #E6E6FA;">
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center my-4">Galeri</h1>
+          <div class="row">
+            <div class="col-lg-3"><img src="image/hut1.JPG" alt="..." class="card w-100 h-100"></div>
+            <div class="col-lg-3"><img src="image/hut2.JPG" alt="..." class="card w-100 h-100"></div>
+            <div class="col-lg-3"><img src="image/hut3.JPG" alt="..." class="card w-100 h-100"></div>
+            <div class="col-lg-3"><img src="image/hut4.JPG" alt="..." class="card w-100 h-100"></div>
+          </div>
+          <div class="text-center my-4">
+            <a class="btn btn-primary" href="galeri.php">Lihat Lainnya</a>
+          </div>
         </div>
       </div>
     </div>
-    <!-- TUTUP SECTION GALERI -->
+  </section>
+  <!-- TUTUP SECTION GALERI -->
 
-    <!-- SECTION STATISTIK -->
-    <div class="row">
-      <div class="col-lg-12">
+  <!-- SECTION STATISTIK -->
+  <section style="background-color: #cfe2ff;">
+    <div class="container">
+      <div class="row">
+
         <h1 class="text-center my-4">Data Statistik</h1>
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="card text-center border-0">
-              <div class="card-body rounded-4 bg-primary-subtle">
-                <h2 class="counter" data-target="1500">1500</h2>
-                Siswa
-              </div>
+
+        <div class="col-lg-3">
+          <div class="card text-center border-0">
+            <div class="card-body  bg-primary-subtle">
+              <h2 class="counter"><?= $data['siswa']; ?></h2>
+              Siswa
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="card text-center border-0">
-              <div class="card-body rounded-4 bg-primary-subtle">
-                <h2 class="counter" data-target="100">100</h2>
-                Guru
-              </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card text-center border-0">
+            <div class="card-body  bg-primary-subtle">
+              <h2 class="counter"><?= $data['pendidik']; ?></h2>
+              Guru
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="card text-center border-0">
-              <div class="card-body rounded-4 bg-primary-subtle">
-                <h2 class="counter" data-target="45">45</h2>
-                Rombel
-              </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card text-center border-0">
+            <div class="card-body  bg-primary-subtle">
+              <h2 class="counter"><?= $data['rombel']; ?></h2>
+              Rombel
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="card text-center border-0">
-              <div class="card-body rounded-4 bg-primary-subtle">
-                <h2 class="counter" data-target="5">5</h2>
-                Program Keahlian
-              </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card text-center border-0">
+            <div class="card-body  bg-primary-subtle bg-transparent ">
+              <h2 class="counter"><?= $data['keahlian']; ?></h2>
+              Program Keahlian
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- TUTUP SECTION STATISTIK -->
 
-    <!-- SECTION KEJURUAN -->
+
+  </section>
+  <!-- TUTUP SECTION STATISTIK -->
+
+  <!-- SECTION KEJURUAN -->
+  <div class="container">
     <div class="row">
       <div class="col-lg-12">
         <h1 class="text-center my-4">Program Kejuruan</h1>
@@ -241,53 +221,16 @@
         </div>
       </div>
     </div>
-    <!-- TUTUP SECTION KEJURUAN -->
   </div>
+  <!-- TUTUP SECTION KEJURUAN -->
+  </div>
+  <?php include 'layout/footer.php'; ?>
 
-  <!-- FOOTER -->
-  <div class="container-fluid my-5">
-    <h1 class="text-center my-4"><b>MITRA INDUSTRI</b></h1>
-    <div class="row bg-secondary">
-      <div class="col-lg-12">
-        <div class="row">
-          <div class="col-lg-5 text-white">
-            <h3 class="text-center">SMKN 4 Tasikmalaya</h3>
-            <hr>
-            <p>Jl Depok Kel. Sukamenak Kec. Purbaratu Kota Tasikmalaya 46196.</p>
-            <p>+62265312059</p>
-            <p>info@smkn4-tsm.sch.id</p>
-          </div>
-          <div class="col-lg-3 text-white">
-            <h3 class="text-center">Media Sosial</h3>
-            <hr>
-            <a class="text-white text-decoration-none" href="https://www.facebook.com/4smknJl" target="_blank">
-              <img src="icon/icons8-facebook-logo-100.png" alt="" width="7%" > Facebook
-            </a><br>
-            <a class="text-white text-decoration-none" href="#">
-              <img src="icon/icons8-youtube-logo-96.png" alt="" width="7%"> Youtube
-            </a><br>
-            <a class="text-white text-decoration-none" href="#">
-              <img src="icon/icons8-instagram-100.png" alt="" width="7%"> Instagram
-            </a>
-          </div>
-          <div class="col-lg-3 text-white">
-            <h3 class="text-center">Link Eksternal</h3>
-            <hr>
-            <a class="text-white text-decoration-none" href="https://kemendikdasmen.go.id/" target="_blank" >Kemendikbud</a><br>
-            <a class="text-white text-decoration-none" href="index.html">Dapodikdasmen</a><br>
-            <a class="text-white text-decoration-none" href="index.html">Psmk</a><br>
-            <a class="text-white text-decoration-none" href="https://disdik.jabarprov.go.id/" target="_blank" >Disdik Jabar</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- TUTUP FOOTER -->
 
   <!-- BOOTSTRAP JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-  
+
 </body>
 
 </html>

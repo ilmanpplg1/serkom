@@ -10,80 +10,58 @@
 </head>
 
 <body class="bg-secondary-subtle">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded-4 shadow p-3 mb-5 bg-body rounded sticky-top">
-        <div class="container">
-            <a class="navbar-brand"><img src="image/logo smkn 4.png" width="15%" height="..."><b>SMKN 4
-                    TASIKMALAYA</b></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item">
-                        <a class="nav-link text" href="index.php">Beranda</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Profil
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="identitas.php">Identitas Sekolah</a></li>
-                            <li><a class="dropdown-item" href="sejarah.php">Sejarah</a></li>
-                            <li><a class="dropdown-item" href="kejuruan.php">Program Kejuruan</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="visi&misi.php">Visi & Misi</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="eskul.php">Ekstrakurikuler</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galeri.php">Galeri</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- TUTUP NAV -->
+    <?php include 'layout/navbar.php'; ?>
 
     <!-- SECTION SEJARAH -->
 
-    <h3 class="my-3 text-center my-3"><b>Sejarah</b>
-        <p class="text-info ">Sekolah</p>
+    <h3 class="my-3 text-center my-3"><b>Sejarah </b>
+
     </h3>
     <div class="container ">
         <div class="row">
-            <?php
-            $sejarah = [
-                [ "gambar" => "image/sejrh.jpg",
-                 "deskripsi" => "Sejalan dengan Program Pemerintah dibidang pendidikan Menengah Kejuruan pada saat itu yakni
-                            pemerataan akses ditambah pula dengan banyaknya keinginan masyarakat yang mengharapkan
-                            adanya SMK Negeri di daerah Kecamatan Purbaratu Kota Tasikmalaya, terutama untuk menampung
-                            tamatan dari SLTP yang ingin melanjutkan ke SMK maka beberapa tokoh masyarakat, unsur
-                            pejabat pemerintah di Kecamatan Purbaratu Kota Tasikmalaya mengusulkan kepada pemerintah
-                            Kota Tasikmalaya dan Pemerintah Provinsi Jawa Barat, agar berdirinya SMK Negeri di Kecamatan
-                            Purbaratu Kota Tasikmalaya."]
-            ];
-            ?>
-            
-            <?php foreach ($sejarah as $item):  ?>
-            <div class="col">
-                <div class="card">
-                    <div class="card-header">
-                        <img src="<?= $item['gambar']; ?>" alt="..." width="100%" height="100%">
-                        <p><?= $item['deskripsi']; ?></p>
-                    </div>
+            <div class="col-lg-12">
+                <div class="card-header">
+                    <img src="image/sejrh.jpg" alt="" width="100%">
                 </div>
             </div>
-            <?php endforeach; ?>
+            <div class="col-lg-12">
+                <div class="card-header">
+                    <h3>Latar Belakang</h3>
+                    <p>
+                        Sejalan dengan Program Pemerintah dibidang pendidikan Menengah Kejuruan pada saat itu yakni
+                        pemerataan akses ditambah pula dengan banyaknya keinginan masyarakat yang mengharapkan adanya
+                        SMK
+                        Negeri di daerah Kecamatan Purbaratu Kota Tasikmalaya, terutama untuk menampung tamatan dari
+                        SLTP
+                        yang ingin melanjutkan ke SMK maka beberapa tokoh masyarakat, unsur pejabat pemerintah di
+                        Kecamatan
+                        Purbaratu Kota Tasikmalaya mengusulkan kepada pemerintah Kota Tasikmalaya dan Pemerintah
+                        Provinsi
+                        Jawa Barat, agar berdirinya SMK Negeri di Kecamatan Purbaratu Kota Tasikmalaya.
+                    </p>
+                    <h3>Mulai Berdiri</h3>
+                    <p>
+                        Setelah melalui perjuangan yang sangat panjang dari berbagai pihak khususnya Disdik Kota
+                        Tasikmalaya
+                        dan pihak-pihak terkait lainnya sesuai prosedur dan ketentuan yang berlaku pada waktu itu dengan
+                        mengucapkan syukur Alhamdulillah akhirnya pada tahun pelajaran 2010/2011 SMK Negeri 4
+                        Tasikmalaya
+                        mulai berdiri, pada awalnya membuka Kompetensi Keahlian Teknik Komputer dan Jaringan dengan
+                        pendaftar peserta Didik Baru pada waktu itu berjumlah 44 orang. Pada awalnya tempat belajar
+                        menumpang di SMP Negeri 17 Kota Tasikmalaya, dan sekolah induknya adalah SMK Negeri 2 Kota
+                        Tasikmalaya, Untuk Tenaga pendidik dan Tenaga Kependidikan masih dibantu sepenuhnya oleh kedua
+                        sekolah tersebut.
+                    </p>
+
+                    Pada tahun 2012 keluarlah surat Izin Pendirian berdasarkan keputusan kepala Badan Pelayanan
+                    Perizinan Terpadu Kota Tasikmalaya No. 420/9/SK-BPPT/2012 Tanggal 06 Februari 2012.
+                </div>
+            </div>
         </div>
     </div>
     <!-- TUTUP SECTION SEJARAH -->
+
+    <?php include 'layout/footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
